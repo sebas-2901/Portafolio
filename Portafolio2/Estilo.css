@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+/* Aplica el box-sizing a todos los elementos para que el padding y el borde se incluyan en el tamaño total del elemento. 
+   Configura la fuente global a 'Work Sans' y elimina el margen y el padding por defecto. */
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* Hace que el desplazamiento en la página sea suave cuando se hace clic en un enlace de anclaje. */
+    scroll-behavior: smooth;
+    /* Fuerza la aparición de una barra de desplazamiento vertical siempre que sea necesaria. */
+    overflow-y: scroll;
+    /* Mejora el desplazamiento en dispositivos táctiles. */
+    -webkit-overflow-scrolling: touch;
+    /* Controla cómo los contenedores de desplazamiento deben alinearse al realizar el scroll. */
+    scroll-snap-type: y mandatory;
+}
+
+/* MENU */
+.contenedor-header{
+    /* Establece un fondo oscuro para el encabezado del menú. */
+    background: #1e1b21;
+    /* Fija la posición del encabezado en la parte superior. */
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* Asegura que el encabezado esté por encima de otros elementos. */
+    z-index: 99;
+}
+
+.contenedor-header header{
+    /* Limita el ancho máximo del contenido del encabezado. */
+    max-width: 1100px;
+    /* Centra el contenido horizontalmente dentro de su contenedor. */
+    margin: auto;
+    /* Establece un diseño de flexbox para distribuir los elementos. */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Añade un relleno al contenido del encabezado. */
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    /* Aplica la fuente 'Righteous' al logo. */
+    font-family: 'Righteous';
+    /* Define el tamaño de la fuente del logo. */
+    font-size: 36px;
+    /* Establece el color del logo. */
+    color: #4090be;
+    /* Elimina el subrayado del texto del logo. */
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    /* Configura los elementos de la lista del menú en una fila. */
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    /* Aplica estilos a los enlaces del menú, como centrado y color. */
+    text-align: none;
+    color: #fff;
+    /* Establece márgenes y rellenos para los enlaces. */
+    margin: 0 15px;
+    padding: 3px;
+    /* Aplica una transición suave al cambiar los estilos. */
+    transition: .5s;
+    /* Elimina la decoración del texto (subrayado) en los enlaces. */
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    /* Cambia el color del enlace cuando el usuario pasa el ratón sobre él. */
+    color: #4090be;
+}
+
+.nav-responsive{
+    /* Estilos para el menú responsive, con fondo y bordes redondeados. */
+    background-color: #4090be;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Oculta el menú responsive por defecto. */
+    display: none;
+}
+
+/* SECCION INICIO */
+.inicio {
+    /* Establece una imagen de fondo que cubre toda la pantalla. */
+    background: url(img/fondo1.gif);
+    background-size: cover;
+    /* Define la altura de la sección para que ocupe toda la ventana. */
+    height: 100vh;
+    /* Establece el color del texto a blanco. */
+    color: #fff;
+    /* Utiliza flexbox para centrar el contenido verticalmente. */
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    /* Aplica un relleno y un fondo al banner dentro de la sección de inicio. */
+    padding: 20px;
+    background-color: #4090be;
+    /* Define el ancho del banner y lo centra horizontalmente. */
+    width: 380px;
+    margin-left: 40%;
+    margin-right: 40%;
+    /* Centra el texto dentro del banner. */
+    text-align: center;
+    /* Redondea las esquinas del banner. */
+    border-radius: 40px;
+    /* Añade una transición para el efecto de hover. */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.inicio .contenido-banner:hover {
+    /* Aumenta el tamaño del banner y cambia su color de fondo al hacer hover. */
+    transform: scale(1.05);
+    background-color: #367da3;
+}
+
+.inicio .contenido-banner img {
+    /* Aplica un margen superior y un borde negro a la imagen dentro del banner. */
+    margin-top: 50px;
+    border: 10px solid #000000;
+    /* Centra la imagen y la ajusta a un 80% de su ancho original. */
+    display: block;
+    width: 80%;
+    margin: auto;
+    /* Redondea la imagen para que parezca circular. */
+    border-radius: 100%;
+    /* Añade una transición al color del borde de la imagen. */
+    transition: border-color 0.3s ease;
+}
+
+.inicio .contenido-banner h1 {
+    /* Añade un margen superior y define el tamaño de la fuente del título. */
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2 {
+    /* Define el tamaño de la fuente del subtítulo y elimina el negrita. */
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a {
+    /* Aplica estilos a los enlaces de redes sociales, como color, tamaño y bordes. */
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 40px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    /* Añade una transición para efectos de fondo y tamaño al hacer hover. */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    /* Cambia el color de fondo y aumenta ligeramente el tamaño de los enlaces al hacer hover. */
+    background-color: #367da3;
+    transform: scale(1.1);
+}
+
+/*SOBRE MI*/
+.sobremi {
+    /* Define un fondo azul y texto blanco para la sección 'Sobre mí'. */
+    background-color: #4090be;
+    color: #fff;
+    /* Añade un relleno a la sección. */
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion {
+    /* Limita el ancho máximo del contenido y lo centra horizontalmente. */
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    /* Define el tamaño de la fuente, la familia de fuentes y centra el texto del título. */
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    /* Añade un relleno al título y una transición al efecto de hover. */
+    padding: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.sobremi h2:hover {
+    /* Aumenta el tamaño del título cuando se pasa el ratón sobre él. */
+    transform: scale(1.05);
+}
+
+.sobremi .contenido-seccion p {
+    /* Define el tamaño de la fuente y la altura de línea para el texto descriptivo. */
+    font-size: 18px;
+    line-height: 22px;
+    /* Añade un margen inferior a los párrafos. */
+    margin-bottom: 20px;
+}
+
+.sobremi .fila {
+    /* Utiliza flexbox para organizar el contenido en dos columnas. */
+    display: flex;
+}
+
+.sobremi .fila .col {
+    /* Define el ancho de las columnas y añade una transición para efectos de hover. */
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.sobremi .fila .col:hover {
+    /* Aumenta ligeramente el tamaño de la columna cuando se pasa el ratón sobre ella. */
+    transform: scale(1.02);
+}
+
+.sobremi button {
+    /* Define estilos para el botón, como color de texto, borde, tamaño y fuente. */
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.sobremi button::before {
+    /* Aplica un pseudo-elemento para crear un fondo azul que se animará. */
+    content: '';
+    background-color: #367da3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.5s;
+    z-index: -1;
+}
+
+.sobremi button:hover::before {
+    /* Expande el fondo azul del botón al hacer hover. */
+    width: 100%;
+}
+
+.sobremi button:hover {
+    /* Cambia el color del texto a blanco cuando el fondo azul cubre todo el botón. */
+    color: #fff;
+}
+
+/* SECCION HABILIDADES*/
+.skills {
+    background-color: #1e1b21;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.skills h2:hover {
+    transform: scale(1.05);
+}
+.skills h3:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 35%;
+    background-color: #1e1b21;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .barra-skill2{
+    height: 8px;
+    width: 40%;
+    background-color: #1e1b21;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .barra-skill3{
+    height: 8px;
+    width: 100%;
+    background-color: #1e1b21;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .barra-skill4{
+    height: 8px;
+    width: 80%;
+    background-color: #1e1b21;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .barra-skill5{
+    height: 8px;
+    width: 80%;
+    background-color: #1e1b21;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #4090be;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #4090be;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .barra-skill2 span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #4090be;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .barra-skill3 span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #4090be;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .barra-skill4 span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #4090be;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .barra-skill5 span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #4090be;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+#image1{
+    height: 40%;
+    width: 40%;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .wordpress{
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.skills .skill .Dedicacion{
+    width: 0%;
+    animation: 2s Dedicacion forwards;
+}
+@keyframes drupal {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+
+/* SECCION PROYECTO */
+.proyecto {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.proyecto .contenido-seccion {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.proyecto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    transition: transform 0.5s ease;
+}
+
+.proyecto h2:hover {
+    transform: scale(1.05);
+}
+.proyecto .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyecto .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto .galeria .proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#image{
+    width: 100%;
+    height: 100%;
+}
+/* SECCION CONTACTO */
+.contacto {
+    background-image: url(img/contact_bg.png);
+    background-color: #4090be;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.contacto h2:hover {
+    transform: scale(1.05);
+}
+
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #000000;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #4090be;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}

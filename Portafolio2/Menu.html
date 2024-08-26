@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="icon" href="img/usuario.png" >
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#proyecto" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpeg" alt="">
+            </div>
+            <h1>Johan Sebastian Mina</h1>
+            <h2>Analista y Desarrollador en Software</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/johansebastian.minalopez"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/johanSebas2907"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sebasti%C3%A1n-mina-23423a2b2/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            29-01-2007
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            sm03122018@gmail.com
+                        </li>
+                        <li>
+                            <strong>Objetivos</strong><br/>
+                            -Ser un programador Full Stack<br/>
+                            -Tener proyectos a gran escala individualesz<br/>
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Aprendiz SENA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                            </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Habilidades Tecnicas-->
+                <div class="col">
+                    <h3>Habilidades Tecnicas(En Proceso)</h3>
+                    <div class="skill">
+                        <span>Javascript y Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill2">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill3">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill4">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajo</h3>
+                        <div class="item der">
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="proyecto" class="proyecto">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div>
+                    <div class="proyecto">
+                        <h3 onclick="toggleVisibility(this)">Sitio Web Teoria del Color</h3>
+                        <p class="proyecto-info" style="display: none;">
+                            - Sitio web dirigido a la teoría, representación, psicología y significado de los Colores, 
+                            desde los primarios hasta los tercearios.<br/><br/>
+                            -Realizado con HTML y CSS<br/><br/>
+                            -Fue mi Primer proyecto por lo cual fue un desafio por lo poco que sabia en ese momento, ya que solo sabia lo basico de CSS
+                            por lo cual no fue posible aplicarle demasiados detalles.<br/><br/>
+                            -Utilize diferentes codigos/clases de CSS basicas para hacer funcionar el sitio Web en diferentes navegadores, 
+                            <strong> no aplicables para dispositivos moviles.</strong><br/><br/>
+                            <img src="img/Teoria_del_Color.png" id="image"><br/><br/>
+                            <strong>PDT:</strong>Si desea ver el contenido de la imagen, hacer zoom.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="proyecto">
+                        <h3 onclick="toggleVisibility(this)">Sitio Web Restaurante Infierno</h3>
+                        <p class="proyecto-info" style="display: none;">
+                            Sitio Web dedicada a un recorrido en el Infierno.<br/><br/>
+                            -Realizado con HTML, CSS y JS<br/><br/>
+                            -En este proyecto fue mas sencillo de realizar debido a que tenia mas conocimiento en HTML y CSS, en esta ocasion
+                            le aplique varios detalles, cambiando fondos de clores simples a imagenes o mejor combinacion de colores, aplicandole
+                            hover a las imagenes y a los botones, incluso, permitiendo redirigir a otras secciones de el Sitio Web.<br/><br/>
+                            - El mayor desafio el funcionamiento de un menu
+                            desplegable, ya que era mi primera vez realizando uno al completo, debido a que tenia un poco conocimiento alguno de como crear uno.<br/><br/>
+                            - La solucion a dicho problema fue utilzar el metodo de programacion JS(Javascript),utilizandolo de manera basica, con funciones basicas para que tenga un uso optimo sin fallas,
+                            utilize la Función <strong>redirigir(pagina).</strong> <!--que sirve basicamente como una URL (pagina) como argumento para poder redirigir al lugar que desea, en este caso
+                            el menu desplegable enque propocione, en mi caso la clase llamada "nav2"--> <br/><br/>
+                            <img src="img/Infierno.png" id="image"></p>
+                           
+                    </div>
+                </div>
+                <div>
+                    <div class="proyecto">
+                        <h3 onclick="toggleVisibility(this)"> BD SENA CDITI DOSQUEBRADAS(En proceso)</h3>
+                        <p class="proyecto-info" style="display: none;">
+                            Base de Datos de las Fichas del Técnico en Programación de Software y Fichas del Tecnólogo en Análisis y Desarrollo de Software.<br/><br/>
+                            -Realizado con HTML, CSS y JS.<br/><br/>
+                            -Es el Proyecto mas completo hasta el momento, debido a que se le va a implementar una base de datos, teniendo un buen diseño, funcionalidad,
+                            entre otro sin fin de detalles, siendo un desafio a gran escala, debido a que se van a manejar una gran magnitud de datos, en el cual no pueden haber
+                            fallos en su funcionamiento, se han dado un sin fin de cambios en su desarrollo que hasta ahora han valido la pena.<br/><br/>
+                            -Para que no haya fallos a un futuro, se ha realizado la pagina de forma individual, es decir, su css o el JS se ha elaborado paso a paso, los colores 
+                            del css fueron estrictamente seleccionados acorde a lo solicitado al usuario al cual va dirigido, la accesibilidd se hizo de la forma mas 
+                            sencilla posible.<br/><br/>
+                            <img src="img/sena.png" id="image"></p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SCRIPT PARAEL DESPLIGE DE LA INFORMACION-->
+
+<script>
+    function toggleVisibility(element) {
+        const paragraph = element.nextElementSibling;
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+            paragraph.style.display = "block";
+        } else {
+            paragraph.style.display = "none";
+        }
+    }
+</script>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <form id="myForm" action="Menu.html" method="GET"></form>
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="cas" action="Menu.html" method="GET">
+                        <input type="text" placeholder="Tú Nombre" required oninvalid="this.setCustomValidity('Por favor, ingresa tu nombre')" oninput="this.setCustomValidity('')">
+                        <input type="tel" placeholder="Número telefónico" required pattern="\d+" oninvalid="this.setCustomValidity('Por favor, ingresa un número telefónico válido')" oninput="this.setCustomValidity('')">
+                        <input type="email" placeholder="Dirección de correo" required oninvalid="this.setCustomValidity('Por favor, ingresa tu dirección de correo')" oninput="this.setCustomValidity('')">
+                        <input type="text" placeholder="Tema" required oninvalid="this.setCustomValidity('Por favor, ingresa el tema')" oninput="this.setCustomValidity('')">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required oninvalid="this.setCustomValidity('Por favor, ingresa tu mensaje')" oninput="this.setCustomValidity('')"></textarea>
+                        
+                        <button type="submit">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>    
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <p>©2024 Johan Sebastian Mina López. Todos los derechos Reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
