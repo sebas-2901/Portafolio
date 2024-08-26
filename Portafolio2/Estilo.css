@@ -607,6 +607,10 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
+#pochoclo{
+    position: absolute;
+    margin-left: 3%;
+}
 footer{
     background-color: #252A2E;
     color: #fff;
