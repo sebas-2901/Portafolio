@@ -25,23 +25,50 @@ const Skills = () => {
         <h2>HABILIDADES</h2>
         <div className="fila">
           <div className="col">
-            <h3>Habilidades Tecnicas (En Proceso)</h3>
-            <div className="skill">
-              <span>Javascript y Python</span>
-              <div className="barra-skill">
-                <div className={`progreso ${animateSkills ? 'javascript' : ''}`}>
-                  <span>35%</span>
-                </div>
-              </div>
-            </div>
+            <h3>Lenguajes y Tecnologías</h3>
             <div className="skill">
               <span>HTML & CSS</span>
               <div className="barra-skill2">
                 <div className={`progreso ${animateSkills ? 'htmlcss' : ''}`}>
-                  <span>40%</span>
+                  <span>95%</span>
                 </div>
               </div>
             </div>
+            <div className="skill">
+              <span>JavaScript</span>
+              <div className="barra-skill">
+                <div className={`progreso ${animateSkills ? 'javascript' : ''}`}>
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div className="skill">
+              <span>Python</span>
+              <div className="barra-skill">
+                <div className={`progreso ${animateSkills ? 'javascript' : ''}`}>
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div className="skill">
+              <span>React</span>
+              <div className="barra-skill">
+                <div className={`progreso ${animateSkills ? 'javascript' : ''}`}>
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+              <div className="skill">
+              <span>Angular</span>
+              <div className="barra-skill">
+                <div className={`progreso ${animateSkills ? 'javascript' : ''}`}>
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col derecha">
+            <h3>Habilidades Blandas</h3>
             <div className="skill">
               <span>Dedicación</span>
               <div className="barra-skill3">
@@ -58,12 +85,20 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col derecha">
-            <h3>Experiencia de trabajo</h3>
-            <div className="item der">
-              <div className="conectord">
-                <div className="circulod"></div>
+            <div className="skill">
+              <span>Trabajo en Equipo</span>
+              <div className="barra-skill4">
+                <div className={`progreso ${animateSkills ? 'wordpress' : ''}`}>
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div className="skill">
+              <span>Resolución de Problemas</span>
+              <div className="barra-skill2">
+                <div className={`progreso ${animateSkills ? 'htmlcss' : ''}`}>
+                  <span>90%</span>
+                </div>
               </div>
             </div>
           </div>

@@ -24,7 +24,6 @@ const Header = () => {
             <li><a href="#sobremi" onClick={closeMenu}>SOBRE MI</a></li>
             <li><a href="#skills" onClick={closeMenu}>HABILIDADES</a></li>
             <li><a href="#proyecto" onClick={closeMenu}>PROYECTOS</a></li>
-            <li><a href="#contacto" onClick={closeMenu}>CONTACTO</a></li>
           </ul>
         </nav>
         <div className="nav-responsive" onClick={toggleMenu}>
