@@ -1,0 +1,99 @@
+/* SECCION CONTACTO */
+.contacto {
+    background-image: url(/img/contact_bg.png);
+    background-color: #4090be;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.contacto h2:hover {
+    transform: scale(1.05);
+}
+
+.contacto .fila{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input, 
+.contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.contacto .col input::placeholder,
+.contacto .col textarea::placeholder {
+    color: #b0b0b0;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #000000;
+    z-index: -1;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto button:hover {
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:700px){
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
