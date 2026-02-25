@@ -1,0 +1,252 @@
+/* SECCION PROYECTO */
+.proyecto {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.proyecto .contenido-seccion {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.proyecto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    transition: transform 0.5s ease;
+    margin-bottom: 30px;
+}
+
+.proyecto h2:hover {
+    transform: scale(1.05);
+}
+
+.proyecto .projects-subtitle {
+    font-size: 32px;
+    font-family: 'Righteous';
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: #4090be;
+}
+
+/* Proyectos estáticos */
+.proyecto .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.proyecto .galeria .proyecto-item {
+    background-color: #1e1b21;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto .galeria .proyecto-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(64, 144, 190, 0.3);
+}
+
+.proyecto .galeria .proyecto-item h3 {
+    color: #4090be;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.proyecto .galeria .proyecto-item h3:hover {
+    color: #5aa3c9;
+}
+
+.proyecto .galeria .proyecto-item .proyecto-info {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.proyecto .galeria .proyecto-item #image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* Repositorios de GitHub */
+.proyecto .github-repos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.proyecto .repo-card {
+    background-color: #1e1b21;
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+}
+
+.proyecto .repo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(64, 144, 190, 0.4);
+    border-color: #4090be;
+}
+
+.proyecto .repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.proyecto .repo-header h3 {
+    color: #4090be;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.proyecto .repo-header .badge {
+    background-color: #4090be;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.proyecto .repo-description {
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    min-height: 50px;
+}
+
+.proyecto .repo-stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.proyecto .repo-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+.proyecto .repo-stats .stat i {
+    color: #4090be;
+}
+
+.proyecto .repo-frameworks {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.proyecto .framework-tag {
+    background-color: rgba(64, 144, 190, 0.2);
+    color: #4090be;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #4090be;
+    transition: all 0.3s ease;
+}
+
+.proyecto .framework-tag:hover {
+    background-color: #4090be;
+    color: #fff;
+}
+
+.proyecto .repo-footer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.proyecto .btn-repo,
+.proyecto .btn-demo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.proyecto .btn-repo {
+    background-color: #4090be;
+    color: #fff;
+}
+
+.proyecto .btn-repo:hover {
+    background-color: #367da3;
+    transform: translateY(-2px);
+}
+
+.proyecto .btn-demo {
+    background-color: transparent;
+    color: #4090be;
+    border: 2px solid #4090be;
+}
+
+.proyecto .btn-demo:hover {
+    background-color: #4090be;
+    color: #fff;
+}
+
+.proyecto .loading {
+    text-align: center;
+    padding: 50px;
+    color: #4090be;
+}
+
+.proyecto .loading i {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.proyecto .no-repos {
+    text-align: center;
+    padding: 50px;
+    color: #b0b0b0;
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:700px){
+    .proyecto .galeria{
+        display: block;
+        width: 100%;
+    }
+    
+    .proyecto .galeria .proyecto-item{
+        max-width: 100%;
+    }
+    
+    .proyecto .github-repos {
+        grid-template-columns: 1fr;
+    }
+}
