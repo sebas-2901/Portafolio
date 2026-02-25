@@ -154,6 +154,29 @@
     color: #4090be;
 }
 
+.proyecto .repo-frameworks {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.proyecto .framework-tag {
+    background-color: rgba(64, 144, 190, 0.2);
+    color: #4090be;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #4090be;
+    transition: all 0.3s ease;
+}
+
+.proyecto .framework-tag:hover {
+    background-color: #4090be;
+    color: #fff;
+}
+
 .proyecto .repo-footer {
     display: flex;
     gap: 10px;
