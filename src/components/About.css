@@ -44,7 +44,6 @@
     padding: 30px;
     border-radius: 15px;
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
 }
 
 .sobremi .col:hover {

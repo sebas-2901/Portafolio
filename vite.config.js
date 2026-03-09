@@ -6,4 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/Portafolio/', // Cambia esto al nombre de tu repositorio en GitHub
    build: { outDir: 'build' },
+  server: {
+    historyApiFallback: true,
+  },
 })

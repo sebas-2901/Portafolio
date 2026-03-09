@@ -1,3 +1,5 @@
+import { Routes, Route } from "react-router-dom";
+import Curriculum from "./components/curriculum";
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -9,12 +11,19 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Footer />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Header />
+            <Hero />
+            <About />
+            <Skills />
+            <Projects />
+            <Footer />
+          </>
+        } />
+        <Route path="/curriculum" element={<Curriculum />} />
+      </Routes>
     </div>
   )
 }
