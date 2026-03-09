@@ -405,7 +405,7 @@ export default function Curriculum() {
         <header style={{display: 'flex', alignItems: 'center', position: 'relative', minHeight: '3.5rem'}}>
           <div className="logo" style={{display: 'flex', alignItems: 'center', position: 'relative', flex: '0 0 auto'}}>
             <a
-              href="/Portafolio/"
+              href={import.meta.env.BASE_URL}
               className="btn-volver"
               style={{
                 position: 'fixed',
