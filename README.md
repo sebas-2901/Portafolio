@@ -1,6 +1,6 @@
 # Portafolio de Johan Sebastian Mina
 
-Este es mi portafolio personal desarrollado con React y Vite, integrado con la API de GitHub para mostrar mis repositorios automáticamente.
+Este es mi portafolio personal(En reestructuracion) desarrollado con React y Vite, integrado con la API de GitHub para mostrar mis repositorios automáticamente.
 
 ## 🚀 Características
 
